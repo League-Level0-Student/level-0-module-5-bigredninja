@@ -69,12 +69,16 @@ public static void main(String[] args) {
     int six = Integer.parseInt(sleep);
     //if they said less than 6, tell them "that's not enough"
     if (six < 6 ) {
-    	
+    JOptionPane.showMessageDialog(null,"that is not enough sleep");
 	}
     //else if they said between 6 and 8, tell them "good job"
-    
+    else if (six >= 6 && six<=8) {
+		JOptionPane.showMessageDialog(null, "good job");
+	}
     //else tell them "that's too much"
-    
+    else {
+	JOptionPane.showMessageDialog(null, "that's to much");
+	}
     }
 	
 
@@ -82,8 +86,12 @@ public static void main(String[] args) {
 
     //finish this method so that "even" is printed if the number is even, or "odd" if the number is odd
     public static void evenOrOdd(int number){
-    
-    }
+    if (number %2==0) {
+		System.out.println("even");
+	} else {
+			System.out.println("odd");
+	}
+}
     
     
     //finish the method so that it asks the user for a number, then uses a for loop to count down to 0 from that number
