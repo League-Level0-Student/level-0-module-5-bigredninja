@@ -49,10 +49,14 @@ public static void main(String[] args) {
 	
 	
 	
-	cool();
+cool();
+
+
 }
 public static void cool() {
+	//System.out.println("I have " + num + " " + thing + ".");
 	//Random rnd = new Random();
+	
 		//Robot me = new Robot();
 		//me.penDown();
 		//me.setPenColor(new Color(rnd.nextInt(255), rnd.nextInt(255), rnd.nextInt(255)));
@@ -64,5 +68,9 @@ public static void cool() {
 		//me.turn(90);
 		//me.move(90);
 		//me.turn(90);
+	
+	String moon =JOptionPane.showInputDialog("give me a number");
+	int num = Integer.parseInt(moon);
+	System.out.println(num);
 }
 }
